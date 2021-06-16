@@ -1,0 +1,19 @@
+.Search {
+    position: relative;
+    margin-left: 20px;
+    width: 300px;
+    height: 35px;
+    margin-top: 10px;
+
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}

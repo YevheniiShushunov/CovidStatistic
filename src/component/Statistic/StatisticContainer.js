@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react';
-import Statistic from './Statistic';
+import Header from '../Header/Header';
+import Search from '../Search/Search';
 
 const StatisticContainer = () => {
     const [covStat, setCovStat] = useState([]);
@@ -9,14 +10,18 @@ const StatisticContainer = () => {
     useEffect(() => {
         axios.get("https://api.covid19api.com/summary").then(res => {
             setCovStat(res.data);
-            console.log(res.data);
             setIsFetching(0);
             })
     },[isFetching])
+
+    if (isFetching === 1) {
+        return <div>zhdi</div>
+    }
      
        return (
         <div>
-           <Statistic covStat={covStat} isFetching={isFetching} />
+            <Header covStat={covStat} />
+            <Search covStat={covStat} isFetching={isFetching}/>          
         </div>
     )
 }

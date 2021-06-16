@@ -3,28 +3,14 @@
     flex-direction: column;   
 }
 
-.statistic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1000px;
-    background:cornflowerblue;
-    padding: 20px 50px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-}
-
 .title {
   display: flex;
   flex-direction: row;
-  
-  /* margin-left: 20px; */
   margin-top: 15px;
+  
+}
+
+.title>* {
   background-color: cornflowerblue;
   color: white;
 }

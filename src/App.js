@@ -1,5 +1,5 @@
 import './App.css';
-import StatisticContainer from './component/StatisticContainer';
+import StatisticContainer from './component/Statistic/StatisticContainer';
 
 function App() {
   return (
