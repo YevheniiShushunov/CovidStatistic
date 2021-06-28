@@ -12,7 +12,7 @@ const StatisticContainer = () => {
             setCovStat(res.data);
             setIsFetching(0);
             })
-    },[isFetching])
+    })
 
     if (isFetching === 1) {
         return <div>zhdi</div>

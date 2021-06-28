@@ -5,9 +5,7 @@ const Statistic = (props) => {
     
     return (
         <div>
-            <div className={style.totalCard}>
-                
-                
+            <div className={style.totalCard}>               
                 <div className={style.title}>
                     <div className={style.number}>
                      <div className={style.card}>№</div>
@@ -38,8 +36,7 @@ const Statistic = (props) => {
                 </div>        
             </div>   
         </div>
-    )
-         
+    )       
 }
 
 export default Statistic;
